@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Gen Pro - AI Content, Image & Marketing Tools</title>
+    <meta name="description" content="AI-powered SEO tools for content, images, keywords, meta descriptions, blog outlines & more. Boost your website's ranking and online presence.">
+
+    <link rel="icon" href="https://placehold.co/32x32/000000/FFFFFF?text=SEO" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://placehold.co/180x180/000000/FFFFFF?text=SEO">
+
+    <meta property="og:title" content="SEO Gen Pro - AI Content & Image Tools">
+    <meta property="og:description" content="AI-powered SEO tools for content, images, keywords, meta descriptions, blog outlines & more. Boost your website's ranking and online presence.">
+    <meta property="og:image" content="https://placehold.co/1200x630/000000/FFFFFF?text=SEO+Gen+Pro+Social">
+    <meta property="og:url" content="https://www.yourwebsite.com/seogenpro"> <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "SEO Gen Pro",
+      "url": "https://www.yourwebsite.com/seogenpro", "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.yourwebsite.com/seogenpro/search?q={search_term_string}", "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light background */
+            color: #2d3748; /* Dark text for contrast */
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0; /* Light gray */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8; /* Slate 400 */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b; /* Slate 500 */
+        }
+
+        /* Custom animation for hero text */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-down {
+            animation: fadeInDown 1s ease-out forwards;
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        /* Hamburger menu icon animation */
+        .hamburger-icon {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 24px;
+            height: 20px;
+            cursor: pointer;
+            z-index: 50; /* Ensure it's above other content */
+        }
+        .hamburger-icon span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background: white;
+            border-radius: 9px;
+            transition: all 0.3s ease-in-out;
+        }
+        .hamburger-icon.open span:nth-child(1) {
+            transform: translateY(9px) rotate(45deg);
+        }
+        .hamburger-icon.open span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger-icon.open span:nth-child(3) {
+            transform: translateY(-9px) rotate(-45deg);
+        }
+
+        /* Mobile menu slide-in */
+        .mobile-menu {
+            transition: transform 0.3s ease-in-out;
+            transform: translateX(100%); /* Hidden by default */
+        }
+        .mobile-menu.open {
+            transform: translateX(0); /* Visible */
+        }
+
+        /* Tool selection tabs */
+        .tool-tab {
+            @apply px-4 py-2 md:px-6 md:py-3 text-sm md:text-lg font-medium rounded-t-lg cursor-pointer transition duration-300 whitespace-nowrap;
+            @apply text-gray-700 bg-gray-100 hover:bg-gray-200;
+            border-bottom: 2px solid transparent; /* For active indicator */
+        }
+        .tool-tab.active {
+            @apply text-blue-800 bg-white shadow-md;
+            border-color: #3b82f6; /* Blue-500 for active tab indicator */
+        }
+        .tool-content {
+            @apply p-6 md:p-8 bg-white rounded-b-lg rounded-tr-lg shadow-xl;
+        }
+
+        /* Advertisement styling */
+        .ad-banner {
+            @apply bg-gradient-to-r from-yellow-400 to-orange-500 text-white p-4 md:p-6 rounded-xl shadow-lg text-center text-lg md:text-2xl font-bold mb-12;
+            border: 2px dashed #fcd34d; /* Yellow-300 */
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <header class="bg-gradient-to-r from-blue-700 to-purple-800 text-white shadow-xl sticky top-0 z-40 p-4">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#home" class="text-3xl font-extrabold tracking-wider rounded-lg px-3 py-2 hover:bg-white hover:text-blue-700 transition duration-300 transform hover:scale-105">
+                SEO Gen Pro
+            </a>
+
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#home" class="hover:text-blue-200 transition duration-300 text-lg font-medium py-2 px-3 rounded-md hover:bg-blue-600">Home</a></li>
+                <li><a href="#tools" class="hover:text-blue-200 transition duration-300 text-lg font-medium py-2 px-3 rounded-md hover:bg-blue-600">Tools</a></li>
+                <li><a href="#about" class="hover:text-blue-200 transition duration-300 text-lg font-medium py-2 px-3 rounded-md hover:bg-blue-600">About</a></li>
+                <li><a href="#privacy" class="hover:text-blue-200 transition duration-300 text-lg font-medium py-2 px-3 rounded-md hover:bg-blue-600">Privacy Policy</a></li>
+                <li><a href="#contact" class="hover:text-blue-200 transition duration-300 text-lg font-medium py-2 px-3 rounded-md hover:bg-blue-600">Contact</a></li>
+            </ul>
+
+            <div class="md:hidden hamburger-icon" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <div id="mobile-menu-panel" class="mobile-menu fixed top-0 right-0 h-full w-64 bg-gradient-to-b from-blue-700 to-purple-800 shadow-lg p-6 pt-20 md:hidden z-30">
+            <ul class="flex flex-col space-y-6 text-xl">
+                <li><a href="#home" class="block py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300" onclick="closeMobileMenu()">Home</a></li>
+                <li><a href="#tools" class="block py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300" onclick="closeMobileMenu()">Tools</a></li>
+                <li><a href="#about" class="block py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300" onclick="closeMobileMenu()">About</a></li>
+                <li><a href="#privacy" class="block py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300" onclick="closeMobileMenu()">Privacy Policy</a></li>
+                <li><a href="#contact" class="block py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300" onclick="closeMobileMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto p-4 md:p-8 lg:p-12">
+        <section id="home" class="text-center py-16 md:py-24 bg-white rounded-3xl shadow-xl mb-12 transform hover:scale-[1.005] transition duration-300">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-blue-800 mb-4 animate-fade-in-down">
+                Your All-in-One AI Platform for SEO Content & Marketing
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto animate-fade-in-up">
+                Leverage our advanced AI tools to generate high-quality, **SEO-optimized content**, stunning **images**, and effective **marketing assets**. Drive organic traffic and enhance your digital presence with ease using **SEO Gen Pro**.
+            </p>
+            <a href="#tools" class="inline-block bg-blue-600 hover:bg-blue-800 text-white font-bold py-3 px-8 rounded-full text-lg md:text-xl transition duration-300 transform hover:scale-105 shadow-lg">
+                Explore Our Powerful Tools
+            </a>
+        </section>
+
+        <div class="ad-banner">
+            <p>Your Ad Here! Reach thousands of content creators.</p>
+            <p class="text-sm mt-2">Advertise with SEO Gen Pro - Contact us for details.</p>
+        </div>
+
+        <section id="tools" class="mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-6 text-center">Our Powerful SEO Tools</h2>
+            <div class="flex flex-wrap justify-center mb-6 overflow-x-auto">
+                <div class="flex bg-gray-100 rounded-t-lg shadow-sm">
+                    <button class="tool-tab active" data-tool="content-generator">Content Generator</button>
+                    <button class="tool-tab" data-tool="image-generator">Image Generator</button>
+                    <button class="tool-tab" data-tool="keyword-ideas">Keyword Ideas</button>
+                    <button class="tool-tab" data-tool="meta-description">Meta Description</button>
+                    <button class="tool-tab" data-tool="blog-outline">Blog Outline</button>
+                    <button class="tool-tab" data-tool="content-rewriter">Content Rewriter</button>
+                    <button class="tool-tab" data-tool="headline-generator">Headline Generator</button>
+                </div>
+            </div>
+
+            <div id="content-generator-tool" class="tool-content">
+                <h3 class="text-2xl md:text-3xl font-bold text-blue-700 mb-6 text-center">Generate SEO Article</h3>
+                <form id="content-form" class="space-y-6 max-w-3xl mx-auto">
+                    <div>
+                        <label for="topic" class="block text-lg font-medium text-gray-700 mb-2">Topic/Title:</label>
+                        <input type="text" id="topic" name="topic" required placeholder="e.g., Benefits of Cloud Computing"
+                               class="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-200 text-gray-800">
+                    </div>
+                    <div>
+                        <label for="keywords" class="block text-lg font-medium text-gray-700 mb-2">Keywords (comma-separated):</label>
+                        <input type="text" id="keywords" name="keywords" required placeholder="e.g., cloud security, data storage, scalability"
+                               class="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-200 text-gray-800">
+                    </div>
+                    <div>
+                        <label for="length" class="block text-lg font-medium text-gray-700 mb-2">Desired Length (words):</label>
+                        <input type="number" id="length" name="length" value="300" min="50" max="1000"
+                               class="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-200 text-gray-800">
+                    </div>
+                    <button type="submit"
+                            class="w-full bg-gradient-to-r from-green-500 to-teal-600 hover:from-green-600 hover:to-teal-700 text-white font-bold py-3 px-6 rounded-lg text-xl transition duration-300 transform hover:scale-105 shadow-md flex items-center justify-center">
+                        <span id="generate-content-text">Generate Content</span>
+                        <svg id="content-loading-spinner" class="animate-spin h-6 w-6 text-white ml-3 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                    </button>
+                </form>
+
+                <div id="generated-content-section" class="mt-10 p-6 md:p-8 bg-gray-50 rounded-lg border border-gray-200 shadow-inner hidden">
+                    <h4 class="text-xl md:text-2xl font-bold text-blue-700 mb-4 text-center">Generated Article:</h4>
+                    <div id="generated-content" class="prose max-w-none text-gray-800 leading-relaxed text-base md:text-lg overflow-auto max-h-96 p-4 border border-gray-300 rounded-md bg-white">
+                        </div>
+                    <button id="copy-content-button" class="mt-6 bg-blue-600 hover:bg-blue-800 text-white font-bold py-2 px-5 rounded-lg transition duration-300 transform hover:scale-105 shadow-md flex items-center mx-auto">
+                        Copy to Clipboard
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+                    </button>
+                    <div id="copy-content-message" class="text-center text-sm text-green-600 mt-2 hidden">Content copied!</div>
+
+                    <div class="mt-6 text-center">
+                        <h5 class="text-lg font-semibold text-gray-700 mb-3">Share this Article:</h5>
+                        <div class="flex justify-center space-x-4">
+                            <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20amazing%20SEO-optimized%20content%20generated%20by%20SEO%20Gen%20Pro!%20%23SEO%20%23AIContent%20%23SEOGenPro&url=https://www.yourwebsite.com/seogenpro" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-full shadow-md transition duration-300 transform hover:scale-110" title="Share on Twitter">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.25c8.53 0 13.2-7.08 13.2-13.2 0-.2 0-.4 0-.6.9-.6 1.7-1.3 2.3-2.1-.8.4-1.6.7-2.5.9.9-.5 1.6-1.4 1.9-2.4-.8.5-1.7.8-2.6 1-.8-.8-1.9-1.3-3.1-1.3-2.3 0-4.2 1.9-4.2 4.2 0 .3 0 .6.1.9-3.5-.2-6.6-1.8-8.7-4.6-.4.6-.6 1.3-.6 2.1 0 1.4.7 2.6 1.9 3.3-.7 0-1.4-.2-2-.5v.1c0 2 1.4 3.7 3.2 4.1-.3.1-.7.1-1 .1-.2 0-.5 0-.7-.1.5 1.6 2 2.8 3.8 2.9-1.4 1.1-3.2 1.8-5.1 1.8-.3 0-.6 0-.9-.1C2.8 19.3 5 20.25 8.29 20.25z"/></svg>
+                            </a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.yourwebsite.com/seogenpro" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-700 hover:bg-blue-800 text-white p-3 rounded-full shadow-md transition duration-300 transform hover:scale-110" title="Share on Facebook">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                            </a>
+                            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.yourwebsite.com/seogenpro&title=SEO%20Gen%20Pro%20-%20AI%20Content%20%26%20Image%20Tools&summary=AI-powered%20SEO%20tools%20for%20content,%20images,%20keywords,%20meta%20descriptions,%20blog%20outlines,%20and%20more.&source=SEO%20Gen%20Pro" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-800 hover:bg-blue-900 text-white p-3 rounded-full shadow-md transition duration-300 transform hover:scale-110" title="Share on LinkedIn">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.044-1.852-3.044-1.853 0-2.136 1.445-2.136 2.951v5.662H9.59V9.218h3.413v1.565h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.27 2.378 4.27 5.467v6.222zM7.948 6.025c-1.161 0-2.09-.93-2.09-2.079 0-1.149.929-2.078 2.09-2.078 1.16 0 2.09.929 2.09 2.078 0 1.149-.93 2.079-2.09 2.079zM4.694 20.452H8.24V9.218H4.694v11.234z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="image-generator-tool" class="tool-content hidden">
+                <h3 class="text-2xl md:text-3xl font-bold text-blue-700 mb-6 text-center">Generate AI Image</h3>
+                <form id="image-form" class="space-y-6 max-w-3xl mx-auto">
+                    <div>
+                        <label for="image-prompt" class="block text-lg font-medium text-gray-700 mb-2">Image Prompt:</label>
+                        <input type="text" id="image-prompt" name="image-prompt" required placeholder="e.g., A futuristic city at sunset, cyberpunk style"
+                               class="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-200 text-gray-800">
+                    </div>
+                    <button type="submit"
+                            class="w-full bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white font-bold py-3 px-6 rounded-lg text-xl transition duration-300 transform hover:scale-105 shadow-md flex items-center justify-center">
+                        <span id="generate-image-text">Generate Image</span>
+                        <svg id="image-loading-spinner" class="animate-spin h-6 w-6 text-white ml-3 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                    </button>
+                </form>
+
+                <div id="generated-image-section" class="mt-10 p-6 md:p-8 bg-gray-50 rounded-lg border border-gray-200 shadow-inner hidden text-center">
+                    <h4 class="text-xl md:text-2xl font-bold text-blue-700 mb-4">Generated Image:</h4>
+                    <img id="generated-image" src="" alt="Generated AI Image" class="max-w-full h-auto mx-auto rounded-lg shadow-md border border-gray-300" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e2e8f0/64748b?text=Image+Not+Available';" />
+                    <div id="image-error-message" class="text-red-600 mt-4 hidden"></div>
+
+                    <div class="mt-6 text-center">
+                        <h5 class="text-lg font-semibold text-gray-700 mb-3">Share this Image:</h5>
+                        <div class="flex justify-center space-x-4">
+                            <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20amazing%20AI-generated%20image%20from%20SEO%20Gen%20Pro!%20%23AIArt%20%23ImageGeneration%20%23SEOGenPro&url=https://www.yourwebsite.com/seogenpro" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-500 hover:bg-blue-600 text-whit
